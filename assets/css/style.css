@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+.nav{
+    background-color: #161d27;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.fixed-top{
+    position: fixed;
+}
+.nav__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav__logo{
+    text-decoration: none;
+    padding: 20px;
+    color:#ffffff;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.developer{
+    color: rgb(74, 180, 161);
+}
+
+.nav-items{
+    display: flex;
+    
+}
+
+.nav-item{
+    list-style:none;
+    padding: 20px;
+    transition: .3s;
+}
+.nav-item:hover{
+    position: relative;
+    text-shadow:
+		0 0 5px rgba(255, 255, 255, 0.589),        
+		0 0 10px rgba(255, 255, 255, 0.589),        
+		0 0 20px rgba(255, 255, 255, 0.589),
+		0 0 40px rgba(255, 255, 255, 0.589),
+		0 0 90px rgba(255, 255, 255, 0.589);
+}
+
+
+.nav-link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-item:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff00;
+    height: 2px;
+    width: 0%;
+    right: 0;
+    bottom: -2px;
+    margin: auto;
+    transition: width .5s;
+}
+.nav-item:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffffdc;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+    transition: width background-color .5s;
+
+}
+
+.home-container{
+    background-color:#161d27 ;
+}
+
+.home{
+    display: flex;
+
+}
+
+.home__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 60px;
+
+    color: #ffffff;
+}
+
+.home__photo{
+    width: 50%;
+    padding: 100px;
+}
+.photo-profile{
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 1px;
+    box-shadow: 
+		0 0 5px rgba(74, 180, 161, 0.589),
+		0 0 10px rgba(255, 255, 255, 0.589),
+		0 0 20px rgba(255, 255, 255, 0.589);
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.description__title{
+    font-size: 55px;
+    padding:35px 0;
+    line-height: 1;
+}
+.description__title .developer {
+    font-size: 35px;
+    padding: 0;
+}
+.contact-items{
+    display: flex;
+    list-style: none;
+}
+
+.contact__title{
+    padding: 5px;
+}
+.contact-link{
+    position: relative;
+    padding: 5px;
+    text-decoration: double;
+    color: #ffffff;
+    margin: 10px;
+
+    
+}
+
+.contact-link::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+    
+    transition: height .2s;
+}
+.contact-link:hover::after{
+    height: 0px;
+    transition: height .2s;
+}
+
+.contact-link:hover{
+    text-shadow:
+		0 0 5px rgba(255, 255, 255, 0.589),
+		0 0 10px rgba(255, 255, 255, 0.589),
+		0 0 20px rgba(255, 255, 255, 0.589),
+		0 0 40px rgba(255, 255, 255, 0.589),
+		0 0 80px rgba(255, 255, 255, 0.589),
+		0 0 90px rgba(255, 255, 255, 0.589);
+}
+.pricing-section{
+    margin: 50px 0;
+}
+
+.pricing{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing__tarjet{
+    margin: 10px;
+    width: 350px;
+    background-color: #161d27;
+    padding: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+.tarjet__title{
+    font-size: 40px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.tarjet__description{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tarjet__price{
+    display: inline;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0;
+    
+
+}
+
+.tarjet__price-contract{
+    font-size: 20px;
+}
+.tarjet__button{
+    margin: 30px;
+}
+
+.tarjet__button__a{
+    text-decoration: none;
+    position: relative;
+    transition: .2s;
+    border: 2px transparent;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 2px;
+    line-height: 1;
+    transition: .3s;
+   
+}
+
+.tarjet__button__a:hover{
+    text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.589),
+    0 0 10px rgba(255, 255, 255, 0.589),
+    0 0 20px rgba(255, 255, 255, 0.589),
+    0 0 40px rgba(255, 255, 255, 0.589),
+    0 0 80px rgba(255, 255, 255, 0.589),
+    0 0 90px rgba(255, 255, 255, 0.589);
+    border: 1px solid #ffffff ;
+
+}
+
+.tarjet__button__a:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    width: 80%;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    margin: auto;
+    transition: .2s;
+}
+
+.tarjet__button__a:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 0;
+    width: 80%;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    margin: auto;
+}
