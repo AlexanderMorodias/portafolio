@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/e7848ceba0.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Alexander Morodias</title>
 </head>
 <body>
     <nav class="nav">
         <div class="nav__container">
-            <a class="nav__logo" href="#">AlexanderMorodias<span class="developer">Dev</span>
-            </a>
+            <div class="menu-resposive">
+                    <a class="nav__logo" href="#">AlexanderMorodias<span class="developer">Dev</span>
+                    </a>
+                    <i class="fa-solid fa-bars burguer"></i>
+            </div>
 
             <div class="nav__links">
                 <ul class="nav-items">
@@ -112,6 +119,69 @@
 
             </div>
         </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact">
+            <div class="general-info">
+                <h2>
+                    Información general
+                </h2>
+                <p>Listo para Emprender tu proyecto? Hazmelo saber.</p>
+                <h5>Información General</h5>
+                <ul>
+                    <li><span class="general-info__subtitle">Correo: </span>xander1620@gmail.com</li>
+                    <li>
+                        <span class="general-info__subtitle">
+                            Telefono: 
+                        </span>
+                        +591 61891740
+                    </li>
+                </ul>
+                <h5>Información General</h5>
+                <ul>
+                    <li><span class="general-info__subtitle">Correo: </span>xander1620@gmail.com</li>
+                    <li>
+                        <span class="general-info__subtitle">
+                            Telefono: 
+                        </span>
+                        +591 61891740
+                    </li>
+                </ul>
+            </div>
+            <div class="form-contact">
+                <h2 class="form-contact__title">
+                    Me contactare contigo lo más antes posible
+                </h2>
+                <form class="formulario" action="">
+                    <div class="formulario__input">
+                        <div class="formulario__input__column">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text">
+                        </div>
+                        <div class="formulario__input__column">
+                            <label for="apellido">Apellido</label>
+                            <input id="apellido" type="text">
+                        </div>
+                    </div>
+                    <div class="formulario__input">
+                        <div  class="formulario__input__column" >
+                            <label for="email">Email</label>
+                            <input id="email" type="text">
+                        </div>
+                        <div class="formulario__input__column">
+                            <label for="phone">Número de Teléfono</label>
+                            <input id="phone" type="text">
+                        </div>
+                    </div>
+                    <div class="formaulario__input">
+                        <label for="text-message">mensaje</label>
+                        <textarea class="text-area" id="textArea" name="" id="text-message" cols="10" rows="10" noresize></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </section>
     
 </body>
