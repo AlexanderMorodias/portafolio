@@ -364,7 +364,7 @@
         position: fixed;
         top: 81px;
         width: 100vw;
-        transition: .4s linear;
+        transition: .3s ease-in all;
         transform: scaleY(1);
         transform-origin: top;
     }
