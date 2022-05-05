@@ -20,7 +20,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-
 }
 
 .nav__logo {
@@ -37,7 +36,6 @@
 
 .nav-items {
     display: flex;
-
 }
 
 .nav-item {
@@ -48,14 +46,8 @@
 
 .nav-item:hover {
     position: relative;
-    text-shadow:
-        0 0 5px rgba(255, 255, 255, 0.589),
-        0 0 10px rgba(255, 255, 255, 0.589),
-        0 0 20px rgba(255, 255, 255, 0.589),
-        0 0 40px rgba(255, 255, 255, 0.589),
-        0 0 90px rgba(255, 255, 255, 0.589);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.589), 0 0 10px rgba(255, 255, 255, 0.589), 0 0 20px rgba(255, 255, 255, 0.589), 0 0 40px rgba(255, 255, 255, 0.589), 0 0 90px rgba(255, 255, 255, 0.589);
 }
-
 
 .nav-link {
     text-decoration: none;
@@ -84,7 +76,6 @@
     bottom: 1px;
     margin: auto;
     transition: width background-color .5s ease-out;
-
 }
 
 .home-container {
@@ -93,7 +84,6 @@
 
 .home {
     display: flex;
-
 }
 
 .home__description {
@@ -102,7 +92,6 @@
     justify-content: center;
     width: 50%;
     padding: 60px;
-
     color: #ffffff;
 }
 
@@ -115,10 +104,7 @@
     width: 100%;
     border: 2px solid #fff;
     border-radius: 1px;
-    box-shadow:
-        0 0 5px rgba(74, 180, 161, 0.589),
-        0 0 10px rgba(255, 255, 255, 0.589),
-        0 0 20px rgba(255, 255, 255, 0.589);
+    box-shadow: 0 0 5px rgba(74, 180, 161, 0.589), 0 0 10px rgba(255, 255, 255, 0.589), 0 0 20px rgba(255, 255, 255, 0.589);
 }
 
 .contact-container {
@@ -153,12 +139,7 @@
     text-decoration: double;
     color: #ffffff;
     margin: 10px;
-
-
     transition: width 5s ease-in;
-
-
-
 }
 
 .contact-link::after {
@@ -170,7 +151,6 @@
     right: 0;
     bottom: 0px;
     margin: auto;
-
     transition: width .2s;
 }
 
@@ -180,13 +160,7 @@
 }
 
 .contact-link:hover {
-    text-shadow:
-        0 0 5px rgba(255, 255, 255, 0.589),
-        0 0 10px rgba(255, 255, 255, 0.589),
-        0 0 20px rgba(255, 255, 255, 0.589),
-        0 0 40px rgba(255, 255, 255, 0.589),
-        0 0 80px rgba(255, 255, 255, 0.589),
-        0 0 90px rgba(255, 255, 255, 0.589);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.589), 0 0 10px rgba(255, 255, 255, 0.589), 0 0 20px rgba(255, 255, 255, 0.589), 0 0 40px rgba(255, 255, 255, 0.589), 0 0 80px rgba(255, 255, 255, 0.589), 0 0 90px rgba(255, 255, 255, 0.589);
 }
 
 .pricing-section {
@@ -223,8 +197,6 @@
     text-align: center;
     font-size: 50px;
     padding: 20px 0;
-
-
 }
 
 .tarjet__price-contract {
@@ -245,19 +217,11 @@
     border-radius: 2px;
     line-height: 1;
     transition: .3s;
-
 }
 
 .tarjet__button__a:hover {
-    text-shadow:
-        0 0 5px rgba(255, 255, 255, 0.589),
-        0 0 10px rgba(255, 255, 255, 0.589),
-        0 0 20px rgba(255, 255, 255, 0.589),
-        0 0 40px rgba(255, 255, 255, 0.589),
-        0 0 80px rgba(255, 255, 255, 0.589),
-        0 0 90px rgba(255, 255, 255, 0.589);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.589), 0 0 10px rgba(255, 255, 255, 0.589), 0 0 20px rgba(255, 255, 255, 0.589), 0 0 40px rgba(255, 255, 255, 0.589), 0 0 80px rgba(255, 255, 255, 0.589), 0 0 90px rgba(255, 255, 255, 0.589);
     border: 1px solid #ffffff;
-
 }
 
 .tarjet__button__a:after {
@@ -330,72 +294,99 @@
     resize: none;
 }
 
+
+/* .burguer {
+    display: none;
+} */
+
 @media screen and (min-width: 300px) and (max-width: 400px) {
     .nav__logo {
         font-size: 20px;
     }
-
     .nav {
         height: 80px;
     }
-
     .nav__container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
     .menu-icon {
         color: white;
     }
-
     .menu-resposive {
         display: flex;
         justify-content: space-between;
     }
-
-    .burguer {
+    /* .burguer {
+        display: flex;
         padding: 20px;
         font-size: 30px;
         color: white;
-
+    } */
+    .burguer {
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
     }
-
+    .line {
+        background-color: #fff;
+        height: 4px;
+        width: 30px;
+        border-radius: 3px;
+        transition: .5s;
+    }
+    .active .line:nth-child(1) {
+        transform: translateY(10px) rotate(135deg);
+    }
+    .active .line:nth-child(2) {
+        transform: scale(0);
+    }
+    .active .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-135deg);
+    }
+    .nav__links--hidde .nav-items {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
     .nav-items {
         display: flex;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.642);
+        background-color: rgb(22, 29, 39);
         text-align: center;
         position: fixed;
         top: 81px;
         width: 100vw;
-        /* display disable */
-        height: 0;
-        display: none;
+        transition: .4s linear;
+        transform: scaleY(1);
+        transform-origin: top;
     }
-
     .home {
         display: flex;
         flex-direction: column;
     }
-
     .home__photo {
         width: 100%;
         padding: 20px 15px;
     }
-
     .home__description {
         order: 2;
     }
-
     .home__photo {
         order: 1;
     }
-    .home__description{
+    .home__description {
         padding: 15px;
         width: 100%
     }
-    .description__title{
+    .description__title {
         font-size: 40px;
         padding: 0;
     }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +15,22 @@
 
     <title>Alexander Morodias</title>
 </head>
+
 <body>
     <nav class="nav">
         <div class="nav__container">
-            <div class="menu-resposive">
-                    <a class="nav__logo" href="#">AlexanderMorodias<span class="developer">Dev</span>
+            <div class="menu-resposive" id="menu-responsive">
+                <a class="nav__logo" href="#">AlexanderMorodias<span class="developer">Dev</span>
                     </a>
-                    <i class="fa-solid fa-bars burguer"></i>
+                <!-- <i class="fa-solid fa-bars burguer"></i> -->
+                <div class="burguer" id="burguer">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
 
-            <div class="nav__links">
+            <div class="nav__links nav__links--hidde" id="navLinks">
                 <ul class="nav-items">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Inicio</a>
@@ -78,12 +85,11 @@
         <div class="pricing">
             <div class="pricing__tarjet">
                 <h4 class="tarjet__title">Basic</h4>
-                <p class="tarjet__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam magni eaque doloribus necessitatibus laudantium repudiandae
-                     dignissimos nostrum iure voluptates in ex ipsam ab, neque aspernatur? Necessitatibus expedita cumque sequi doloribus.</p>
-                    <span class="tarjet__price">9.99bs<small class="tarjet__price-contract">
+                <p class="tarjet__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam magni eaque doloribus necessitatibus laudantium repudiandae dignissimos nostrum iure voluptates in ex ipsam ab, neque aspernatur? Necessitatibus expedita cumque sequi doloribus.</p>
+                <span class="tarjet__price">9.99bs<small class="tarjet__price-contract">
                         al mes
                         </small></span>
-                    
+
 
                 <div class="tarjet__button">
                     <a class="tarjet__button__a" href="">Contratar Ahora!</a>
@@ -92,12 +98,11 @@
             </div>
             <div class="pricing__tarjet">
                 <h4 class="tarjet__title">Basic</h4>
-                <p class="tarjet__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam magni eaque doloribus necessitatibus laudantium repudiandae
-                     dignissimos nostrum iure voluptates in ex ipsam ab, neque aspernatur? Necessitatibus expedita cumque sequi doloribus.</p>
-                    <span class="tarjet__price">9.99bs<small class="tarjet__price-contract">
+                <p class="tarjet__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam magni eaque doloribus necessitatibus laudantium repudiandae dignissimos nostrum iure voluptates in ex ipsam ab, neque aspernatur? Necessitatibus expedita cumque sequi doloribus.</p>
+                <span class="tarjet__price">9.99bs<small class="tarjet__price-contract">
                         al mes
                         </small></span>
-                    
+
 
                 <div class="tarjet__button">
                     <a class="tarjet__button__a" href="">Contratar Ahora!</a>
@@ -106,12 +111,11 @@
             </div>
             <div class="pricing__tarjet">
                 <h4 class="tarjet__title">Basic</h4>
-                <p class="tarjet__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam magni eaque doloribus necessitatibus laudantium repudiandae
-                     dignissimos nostrum iure voluptates in ex ipsam ab, neque aspernatur? Necessitatibus expedita cumque sequi doloribus.</p>
-                    <span class="tarjet__price">9.99bs<small class="tarjet__price-contract">
+                <p class="tarjet__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam magni eaque doloribus necessitatibus laudantium repudiandae dignissimos nostrum iure voluptates in ex ipsam ab, neque aspernatur? Necessitatibus expedita cumque sequi doloribus.</p>
+                <span class="tarjet__price">9.99bs<small class="tarjet__price-contract">
                         al mes
                         </small></span>
-                    
+
 
                 <div class="tarjet__button">
                     <a class="tarjet__button__a" href="">Contratar Ahora!</a>
@@ -134,8 +138,7 @@
                     <li>
                         <span class="general-info__subtitle">
                             Telefono: 
-                        </span>
-                        +591 61891740
+                        </span> +591 61891740
                     </li>
                 </ul>
                 <h5>Información General</h5>
@@ -144,8 +147,7 @@
                     <li>
                         <span class="general-info__subtitle">
                             Telefono: 
-                        </span>
-                        +591 61891740
+                        </span> +591 61891740
                     </li>
                 </ul>
             </div>
@@ -165,7 +167,7 @@
                         </div>
                     </div>
                     <div class="formulario__input">
-                        <div  class="formulario__input__column" >
+                        <div class="formulario__input__column">
                             <label for="email">Email</label>
                             <input id="email" type="text">
                         </div>
@@ -183,6 +185,10 @@
         </div>
 
     </section>
-    
+
+
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
